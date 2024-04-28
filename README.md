@@ -49,8 +49,8 @@ void __stdcall __callback_class_file_load_hook(jvmtiEnv* jvmti_env,
 #### To conclude, we read the classes using the parameters of our callback, and upon dettach our DLL, we clean up the callbacks and dettach our thread.
 
 ```
-	jvmti_env->SetEventCallbacks(NULL, NULL);
-	jvmti_env->SetEventNotificationMode(JVMTI_DISABLE, JVMTI_EVENT_CLASS_FILE_LOAD_HOOK, NULL);
+jvmti_env->SetEventCallbacks(NULL, NULL);
+jvmti_env->SetEventNotificationMode(JVMTI_DISABLE, JVMTI_EVENT_CLASS_FILE_LOAD_HOOK, NULL);
 
-	vm->DetachCurrentThread();
+vm->DetachCurrentThread();
 ```
