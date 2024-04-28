@@ -1,6 +1,10 @@
 ## Runtime Java Class Dumper 
 Runtime dumping java classes using JNI
 
+### Demonstration
+
+[![Runtime Java Class Dumper](https://img.youtube.com/vi/-R28OsJ4qug/0.jpg)](https://www.youtube.com/watch?v=-R28OsJ4qug)
+
 ### How it works?
 To be able to dump the classes of a Java program at runtime, we need to have access to them when they are being loaded. For this, we use the JNI (Java Native Interface) library, which provides us with the means to do so. 
 
